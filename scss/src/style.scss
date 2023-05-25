@@ -147,12 +147,18 @@ li {
         text-align: center;
         margin-top: 10px;
     }
+    @media screen and (max-width: 720px) {
+        width: 300px;
+    }
 }
 
 .projet_img {
     width: 500px;
     height: 250px;
     border-radius: 15px 15px 0 0;
+    @media screen and (max-width: 720px)  {
+        width: 100%;
+    }
 }
 
 .projet_infos {
@@ -201,8 +207,11 @@ footer {
 .projet_competences {
     display: flex;
     justify-content: center;
-    .projet_logos {
-        height: 6vw;
+}
+.projet_logos {
+    height: 80px;
+    @media screen and (max-width: 596px)  {
+     height: 50px;
     }
 }
 
