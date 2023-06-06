@@ -1,6 +1,7 @@
+
 * {
     margin: 0;
-  }
+}
 
 body {
     font-family: 'roboto', sans-serif;
@@ -8,23 +9,23 @@ body {
     background-color: #311557;
 }
 
+header, footer {
+    background-color: white;
+    padding: 20px 50px;
+}
+
 a {
     text-decoration: none;
     color: black;
 }
 
-.icone_header {
+.icone {
     color:#8F78AD;
     font-weight: bold;
     font-size: 25px;
     @media screen and (max-width: 996px) {
        margin: 15px;
     }
-}
-
-header, footer {
-    background-color: white;
-    padding: 20px 50px;
 }
 
 nav {
@@ -57,6 +58,13 @@ section {
     text-align: center;
 }
 
+h1,
+h2,
+h3,
+p {
+    color: #F9F8FF;
+}
+
 h1 {
     font-size: 3.5em;
 }
@@ -67,45 +75,7 @@ h2 {
 
 .intro {
     padding: 40px;
-    font-size: 18px;
-    
-}
-
-.accueil {
-    margin-left: 30px;
-}
-
-.social {
-    margin-left: 30px;
-    &:hover {
-        opacity: 0.5;
-    }
-}
-
-.img_social {
-    border-radius: 5px;
-}
-
-.logo_competences {
-    display: flex;
-}
-
-footer {
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    p {
-        color: black;
-    }
-}
-
-h1,
-h2,
-h3,
-p,
-label,
-li {
-    color: #F9F8FF;
+    font-size: 18px; 
 }
 
 .cta {
@@ -117,6 +87,12 @@ li {
     &:hover {
         background: linear-gradient(#696484, #8788ba);
     }
+}
+
+#projets h3 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 1.5em;
 }
 
 .projets_description {
@@ -131,11 +107,6 @@ li {
     }
 }
 
-#projets h3 {
-    text-align: center;
-    margin-bottom: 50px;
-    font-size: 1.5em;
-}
 .projet {
     background-color: white;
     margin: 15px;
@@ -147,23 +118,32 @@ li {
         text-align: center;
         margin-top: 10px;
     }
+    .projet_img {
+        width: 500px;
+        height: 250px;
+        border-radius: 15px 15px 0 0;
+        @media screen and (max-width: 720px)  {
+            width: 100%;
+        }
+    }
+    .projet_infos {
+        color: black;
+        padding: 15px;
+    }
     @media screen and (max-width: 720px) {
         width: 300px;
     }
 }
 
-.projet_img {
-    width: 500px;
-    height: 250px;
-    border-radius: 15px 15px 0 0;
-    @media screen and (max-width: 720px)  {
-        width: 100%;
-    }
-}
-
-.projet_infos {
-    color: black;
-    padding: 15px;
+.projet_competences {
+    display: flex;
+    justify-content: center;
+    .projet_logos {
+        height: 80px;
+        @media screen and (max-width: 596px)  {
+         height: 50px;
+        }
+    }  
 }
 
 .projet_hover {
@@ -188,30 +168,35 @@ li {
 #contact {
     text-align: center;
   h3 {
-    text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     font-size: 1.5em ;
-}
+   }
 }
 
 .social {
     display: flex;
     justify-content: center;
     margin: 10px;
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+.img_social {
+    border-radius: 5px;
 }
 
 footer {
+    background-color: white;
     height: 20px;
-}
-
-.projet_competences {
     display: flex;
     justify-content: center;
-}
-.projet_logos {
-    height: 80px;
-    @media screen and (max-width: 596px)  {
-     height: 50px;
+    p {
+        color: black;
     }
 }
+
+
+
+
 
